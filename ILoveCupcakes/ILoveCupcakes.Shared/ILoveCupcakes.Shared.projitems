@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>8cacba89-5596-4fa2-9c64-37198d4bc6f3</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ILoveCupcakes</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\SampleDataSource.cs" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cupcake-01.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cupcake-02.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cupcake-03.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cupcake-04.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cupcake-05.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cupcake-mix.mp4" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cupcake-mix.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cupcake-pour.mp4" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cupcake-pour.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\frosting-mix.mp4" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\frosting-mix.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\ILoveCupcakes-106.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\ILoveCupcakes-120.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\ILoveCupcakes-170.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\ILoveCupcakes-360.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\ILoveCupcakes-744.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\ilovecupcakes-background.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\ilovecupcakes-splash.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\note-about-artwork.txt" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData.json" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en-US\Resources.resw" />
+  </ItemGroup>
+</Project>
